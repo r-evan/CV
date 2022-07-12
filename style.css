@@ -1,0 +1,143 @@
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+p{
+    font-size: 15px;
+}
+body{
+    background-color: rgb(194, 194, 194);
+}
+.page{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 1131px;
+}
+
+/* Début de la partie aside */
+aside{
+    width: 35%;
+    background-color: #1F3763;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px 30px 30px 30px;
+}
+aside img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+aside h1{
+    font-size: 48px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    line-height: 48px;
+    margin: 25px 0px;
+}
+.block h3, .block p{
+    margin-bottom: 10px;
+}
+.block{
+    margin-bottom: 25px;
+}
+.icon{
+    display: flex;
+}
+.icon p {
+    margin-left: 10px;
+}
+.form p{ 
+    font-size: 14px;
+    line-height: 14px;
+}
+aside a{
+    color:rgb(255, 255, 255)
+}
+/* Fin de la partie aside */
+
+/* Début de la partie main */
+main{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    color: rgb(94, 94, 94);
+    padding: 40px 30px 40px 40px;
+}
+main a{
+    color: rgb(94, 94, 94);
+}
+.profil, .comp, .exp{
+    margin-bottom: 35px;
+}
+.profil h3, .comp h3, .exp h3{
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+}
+.stage-titre{
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.stage{
+    margin-bottom: 25px;
+
+}
+.stage:last-child{
+    margin-bottom: 0px;
+}
+.stage-date{
+    margin-bottom: 6px;
+    color: rgb(94, 94, 94);
+    font-size: 14px;
+}
+.comp h3{
+    width: 100%;
+}
+.comp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.savoir{
+    width: 50%;
+    margin-bottom: 15px;
+
+}
+.barre{
+    width: 75%;
+    position: relative;
+    height: 10px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 5px;
+}
+.jauge{
+    height: 10px;
+    border-radius: 5px;
+    background-color:#1F3763;
+    animation-name: progress;
+    animation-duration: 800ms;
+    animation-delay: calc(600ms * var(--i));
+    animation-fill-mode: forwards;
+}
+.test{
+    width: 0px;
+}
+@keyframes progress {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: var(--width);
+    }
+}
+
+/* Fin de la partie main */
+
